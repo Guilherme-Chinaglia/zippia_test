@@ -9,7 +9,7 @@ import { JobProps } from "../test/jobs"
 * As the jobDescription contains html content, I used dangerouslySetInnerHTML to parse it as html.
 * Due to the limitations of tailwindCSS, I created a .text class and styled it with style jsx.
 */
-export const Card: React.FC<JobProps> = (job) => {
+const Card: React.FC<JobProps> = (job) => {
   return (
     <div className="border rounded-md max-w-sm h-56 overflow-hidden p-4 m-4">
       <h1 className="text-2xl font-bold">{job.jobTitle}</h1>
@@ -28,3 +28,5 @@ export const Card: React.FC<JobProps> = (job) => {
     </div>
   )
 }
+
+export default Card

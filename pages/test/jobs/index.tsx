@@ -1,6 +1,6 @@
-import { Card } from "@/pages/components/Card"
+import Card  from "@/pages/components/Card"
 import axios from "axios"
-import { NextPage } from "next"
+import { NextPage, GetServerSideProps } from "next"
 import { Key, useState, useEffect } from "react"
 import { useQuery } from "react-query"
 
